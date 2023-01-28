@@ -6,10 +6,9 @@ function Videos({ videos, direction }) {
   if (!videos?.length) return <Spinner />;
   return (
     <Stack
-      className="air"
       direction={direction || "row"}
       flexWrap="wrap"
-      justifyContent="start"
+      justifyContent="center"
       sx={{ gap: { md: 2, xs: 1 } }}
     >
       {videos.map((item, idx) => (
